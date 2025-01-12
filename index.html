@@ -111,12 +111,26 @@
     </div>
   </div>
 
-  <!-- Form to Add a Recommendation -->
-  <form id="recommendation-form">
-    <textarea id="new-recommendation" placeholder="Write your recommendation here..." required></textarea>
-    <button type="submit" class="submit-button">Submit</button>
-  </form>
-</section>
+<form id="recommendation-form">
+  <!-- Name Field -->
+  <input 
+    type="text" 
+    id="name" 
+    placeholder="Name (Optional)" 
+    class="form-field" 
+  />
+  
+  <!-- Message Field -->
+  <textarea 
+    id="message" 
+    placeholder="Message" 
+    class="form-field"
+    required
+  ></textarea>
+  
+  <!-- Submit Button -->
+  <button type="submit" class="submit-button">Submit</button>
+</form>
 
 <!-- Floating Home Icon -->
 <a href="#top" id="home-icon" class="home-icon">
