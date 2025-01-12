@@ -197,3 +197,35 @@ nav ul li a:hover {
   color: #4b0082; /* Purple quotation marks */
   font-weight: bold;
 }
+
+/* Recommendation Form */
+#recommendation-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#recommendation-form textarea {
+  width: 80%;
+  max-width: 400px;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#recommendation-form button {
+  padding: 10px 20px;
+  background-color: #4b0082; /* Purple button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#recommendation-form button:hover {
+  background-color: #3a006b; /* Darker purple on hover */
+}
