@@ -154,32 +154,39 @@ nav ul li a:hover {
 }
 
 /* Recommendations Section */
+/* Recommendations Section */
 #recommendations {
   padding: 40px;
   text-align: center;
 }
 
+.recommendations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 .recommendation {
-  margin-bottom: 20px;
-  font-style: italic;
-}
-
-#recommendation-form textarea {
-  display: block;
   width: 300px;
-  margin: 10px auto;
-  padding: 10px;
-  font-size: 14px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-style: italic;
+  line-height: 1.6;
 }
 
-#recommendation-form button {
-  padding: 10px 20px;
-  background-color: #4b0082;
-  color: white;
-  border: none;
-  cursor: pointer;
+.recommendation p {
+  margin: 0;
+  color: #333;
 }
 
-#recommendation-form button:hover {
-  background-color: #3a006b;
+.recommendation p::before,
+.recommendation p::after {
+  content: '"'; /* Add quotation marks */
+  font-size: 20px;
+  color: #4b0082; /* Purple color */
+  font-weight: bold;
 }
