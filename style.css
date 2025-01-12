@@ -191,34 +191,67 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-/* Recommendation Form */
-#recommendation-form {
-  margin-top: 20px;
-  text-align: center;
-}
-
-#recommendation-form textarea {
+/* Form Fields */
+.form-field {
   width: 80%;
   max-width: 400px;
-  height: 80px;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  resize: none;
+  margin-bottom: 15px;
   font-size: 14px;
-  margin-bottom: 10px;
-}
-
-#recommendation-form button {
-  padding: 10px 20px;
-  background-color: #4b0082; /* Purple button */
-  color: white;
-  border: none;
+  color: #333; /* Text color */
+  border: 1px solid #ccc; /* Light gray border */
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+  outline: none; /* Remove blue outline */
 }
 
-#recommendation-form button:hover {
-  background-color: #3a006b; /* Darker purple on hover */
+.form-field::placeholder {
+  color: #aaa; /* Light gray placeholder */
+  font-style: italic; /* Placeholder in italics */
 }
+
+.form-field:focus {
+  border: 1px solid #4b0082; /* Purple border on focus */
+}
+/* Submit Button */
+.submit-button {
+  background-color: transparent; /* Transparent background */
+  color: #4b0082; /* Purple text */
+  border: 2px solid #4b0082; /* Purple outlined border */
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #4b0082; /* Purple background on hover */
+  color: white; /* White text on hover */
+}
+
+/* Floating Home Icon */
+.home-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4b0082; /* Purple background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.home-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.home-icon:hover {
+  background-color: #3a006b; /* Darker purple on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
