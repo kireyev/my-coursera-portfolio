@@ -156,43 +156,36 @@ nav ul li a:hover {
 /* Recommendations Section */
 #recommendations {
   padding: 40px;
-  background-color: #f9f9f9; /* Light background for the section */
   text-align: center;
-}
-
-#recommendations h2 {
-  color: #4b0082; /* Purple heading */
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: bold;
+  background-color: #f9f9f9;
 }
 
 .recommendations-container {
   display: flex;
-  justify-content: center; /* Center the recommendations */
-  gap: 20px; /* Space between recommendation boxes */
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .recommendation {
-  width: 300px; /* Set a fixed width for each box */
-  background-color: white; /* White background for the box */
-  border: 1px solid #ddd; /* Light gray border */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for the box */
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  font-style: italic; /* Italic font style for the text */
-  line-height: 1.6; /* Better line spacing */
+  font-style: italic;
+  line-height: 1.6;
 }
 
 .recommendation p {
   margin: 0;
-  color: #333; /* Dark text */
+  color: #333;
 }
 
 .recommendation p::before,
 .recommendation p::after {
-  content: '"'; /* Add quotation marks */
+  content: '"';
   font-size: 20px;
   color: #4b0082; /* Purple quotation marks */
   font-weight: bold;
