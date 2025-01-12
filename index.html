@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header Section -->
   <header>
     <div class="top-left">
       <h1>Kyrylo K</h1>
@@ -22,19 +23,39 @@
       </ul>
     </nav>
   </header>
+
+  <!-- About Me Section -->
   <section id="about">
-    <img src="images/profile.jpg" alt="Kyrylo K">
-    <h2>Hi, I'm Kyrylo K! 👋</h2>
-    <p>A full-stack developer with experience in application and presentation layers, building high-quality solutions.</p>
+    <div class="about-container">
+      <!-- Profile Image -->
+      <img src="images/profile.png" alt="Kyrylo K's Profile Picture" class="profile-img">
+      <!-- About Text -->
+      <div class="about-text">
+        <h2>Hi, I'm Kyrylo K! 👋</h2>
+        <p>
+          I am a full-stack developer with 2 years of experience in both application and presentation layers. 
+          I have worked on applications and microservices deployed on cloud platforms. 
+          I enjoy working with the latest technologies and building solutions that make an impact.
+        </p>
+      </div>
+    </div>
   </section>
+
+  <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
     <div class="skill">
       <img src="images/html-logo.png" alt="HTML">
       <p>2 years experience</p>
     </div>
-    <!-- Add other skills here -->
+    <div class="skill">
+      <img src="images/javascript-logo.png" alt="JavaScript">
+      <p>1.5 years experience</p>
+    </div>
+    <!-- Add more skills here -->
   </section>
+
+  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
     <ul>
@@ -43,6 +64,8 @@
       <li><h3>Fashion Website</h3><p>Created a multi-page styled website for a fashion client.</p></li>
     </ul>
   </section>
+
+  <!-- Recommendations Section -->
   <section id="recommendations">
     <h2>Recommendations</h2>
     <div class="recommendation">
@@ -54,6 +77,7 @@
       <button type="submit">Submit</button>
     </form>
   </section>
+
   <script src="script.js"></script>
 </body>
-</
+</html>
