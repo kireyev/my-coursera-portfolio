@@ -204,29 +204,48 @@ nav ul li a:hover {
   outline: none; /* Remove blue outline */
 }
 
+#recommendation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center everything horizontally */
+  margin-top: 30px;
+}
+
+.form-group {
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 15px;
+  text-align: center; /* Center-align text in buttons and fields */
+}
+
+.form-field {
+  width: 100%; /* Full width of the form-group container */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
 .form-field::placeholder {
-  color: #aaa; /* Light gray placeholder */
-  font-style: italic; /* Placeholder in italics */
+  color: #aaa; /* Placeholder in light gray */
+  font-style: italic;
 }
 
 .form-field:focus {
   border: 1px solid #4b0082; /* Purple border on focus */
 }
-/* Submit Button */
 .submit-button {
-  background-color: transparent; /* Transparent background */
+  width: 100%; /* Full width of the form-group container */
+  background-color: transparent;
   color: #4b0082; /* Purple text */
-  border: 2px solid #4b0082; /* Purple outlined border */
+  border: 2px solid #4b0082; /* Purple outline */
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 0;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-
-.submit-button:hover {
-  background-color: #4b0082; /* Purple background on hover */
-  color: white; /* White text on hover */
 }
 
 /* Floating Home Icon */
