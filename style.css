@@ -3,7 +3,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
+
+/* Header Section */
 header {
   display: flex;
   justify-content: space-between;
@@ -13,7 +16,6 @@ header {
   padding: 10px 20px;
 }
 
-/* Top-Left Section Styles */
 .top-left {
   display: flex;
   flex-direction: column;
@@ -31,7 +33,7 @@ header {
   font-size: 14px;
 }
 
-/* Navigation Styles */
+/* Navigation Bar */
 nav ul {
   list-style: none;
   display: flex;
@@ -46,19 +48,119 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 16px;
+  transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 nav ul li a:hover {
+  font-weight: bold;
   text-decoration: underline;
 }
 
-/* Section Styles */
-section {
-  padding: 20px;
+/* About Me Section */
+#about {
+  padding: 40px;
+  text-align: center;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.profile-img {
+  width: 150px; /* Set image size */
+  height: 150px;
+  border-radius: 50%; /* Circular image */
+  border: 3px solid #4b0082; /* Purple border */
+}
+
+.about-text h2 {
+  font-size: 24px;
+  color: #4b0082; /* Purple color */
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #333; /* Dark gray text */
+  line-height: 1.6;
+  max-width: 400px; /* Limit paragraph width */
+  text-align: left;
+}
+
+/* Skills Section */
+#skills {
+  padding: 40px;
+  text-align: center;
+}
+
+.skill {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
 }
 
 .skill img {
   width: 50px;
   height: 50px;
+}
+
+.skill p {
+  margin: 5px 0 0;
+}
+
+/* Projects Section */
+#projects {
+  padding: 40px;
+  text-align: center;
+}
+
+#projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+#projects li {
+  margin-bottom: 20px;
+}
+
+#projects h3 {
+  margin: 0 0 5px;
+  color: #4b0082;
+}
+
+/* Recommendations Section */
+#recommendations {
+  padding: 40px;
+  text-align: center;
+}
+
+.recommendation {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+#recommendation-form textarea {
+  display: block;
+  width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#recommendation-form button {
+  padding: 10px 20px;
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#recommendation-form button:hover {
+  background-color: #3a006b;
 }
